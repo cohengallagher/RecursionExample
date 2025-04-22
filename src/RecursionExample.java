@@ -1,3 +1,5 @@
+// Cohen Gallagher - 4/22/25
+
 public class RecursionExample {
     public static void main(String[] args) {
         String input = "Recursion is awesome!";
@@ -12,7 +14,7 @@ public class RecursionExample {
      * @return The number of vowels in the string
      */
     public static int countVowels(String str) {
-        // Base case: if string is empty, return 0
+        // Base case
         if (str.isEmpty()) {
             return 0;
         }
@@ -21,7 +23,7 @@ public class RecursionExample {
         char first = str.charAt(0);
         int count = (first == 'a' || first == 'e' || first == 'i' || first == 'o' || first == 'u') ? 1 : 0;
 
-        // Recursive step: count vowels in the rest of the string
+        // Recursive step - count vowels
         return count + countVowels(str.substring(1));
     }
 }
