@@ -1,8 +1,15 @@
 // Cohen Gallagher - 4/22/25
 
+import java.util.Scanner;
+
 public class RecursionExample {
     public static void main(String[] args) {
-        String input = "Recursion is awesome!";
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        System.out.println("Enter a statement and I will count the vowels!");
+        input = scanner.nextLine();
+
+
         int vowelCount = countVowels(input.toLowerCase());
         System.out.println("Number of vowels: " + vowelCount);
     }
